@@ -1,0 +1,581 @@
+/* 🔄 Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* 🌌 Banner Bölməsi */
+.main-banner {
+  width: 100vw;
+  height: 100vh;
+}
+
+.banner {
+  background-image: 
+    radial-gradient(circle at center, rgba(20, 11, 63, 0.5), rgba(7, 22, 41, 0.95)),
+    url('../html_advanced/images/main_pic.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* 🔝 Header */
+.banner header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  gap: 48px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* 📝 Banner Content */
+.banner-content {
+  text-align: center;
+  margin-top: 120px;
+  
+}
+
+.banner-content h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.banner-content p {
+  font-size: 24px;
+  color: #d3d3d3;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.banner-content button {
+  padding: 16px 38px;
+  background-color: #C271FF;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner-content button:hover {
+  background-color: #a85ce2;
+}
+
+
+/* 🎤 Learn from the pros bölməsi */
+.pros-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 100px 0;
+}
+
+.pro-item {
+  text-align: center;
+}
+
+.pro-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.pro-item h3 {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.pro-item p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* =========================
+   🟣 Testimonial Bölməsi
+   ========================= */
+
+.testimonial {
+  background-color: #C271FF; /* Qara fon */
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: auto;
+  color: #FFFFFF; /* Ağ mətn */
+}
+
+.testimonial-content img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-content blockquote {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: #f0f0f0;
+}
+
+.testimonial-content .author {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #f0f0f0; 
+}
+
+.testimonial-content .role {
+  font-size: 14px;
+  color: #D3D3D3;
+  margin-top: -10px; 
+  text-align: left;
+}
+
+
+/* =========================
+   📚 Most Popular Tutorials
+   ========================= */
+
+/*1*/
+
+
+.popular-tutorials {
+  background-color: #ffffff;
+  padding: 879px 47px;
+  text-align: center;
+  color: #071629;
+  position: 58 x 115px;
+  
+}
+
+.popular-tutorials h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.imagess {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap; /* kiçik ekranlarda alt-alta düşə bilsin */
+}
+
+/* 📦 Tutorial kartları */
+.tutorial-list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.tutorial-card {
+  background-color: transparent;
+  width: 260px;
+  text-align: left;
+}
+
+.tutorial-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.tutorial-card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #FFFFFF;
+}
+
+.tutorial-card p {
+  font-size: 14px;
+  color: #D3D3D3;
+  margin-bottom: 16px;
+}
+
+/* 👤 Tutor info */
+.tutor-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tutor-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.tutor-info h3 {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+/* ⭐ Rating və zaman */
+.rating-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-time img {
+  width: 16px;
+  height: 16px;
+}
+
+.rating-time p {
+  font-size: 12px;
+  color: #FFFFFF;
+  margin-left: auto;
+}
+
+/* 📦 Tutorial kartları 2 */
+
+.popular-tutorials {
+  background-color: #071629;
+  padding: 100px 80px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.popular-tutorials h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+/* 📦 Kartların yan-yana düzülməsi */
+.tutorial-list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap; /* kiçik ekranlarda alt-alta düşə bilsin */
+}
+
+.tutorial-card {
+  width: 260px;
+  text-align: left;
+}
+
+.tutorial-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.tutorial-card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.tutorial-card p {
+  font-size: 14px;
+  color: #D3D3D3;
+  margin-bottom: 16px;
+}
+
+.tutor-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tutor-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.tutor-info h3 {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.rating-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rating-time img {
+  width: 16px;
+  height: 16px;
+}
+
+.rating-time p {
+  font-size: 12px;
+  color: #FFFFFF;
+  margin-left: auto;
+}
+
+/* 📦 Tutorial kartları 3 */
+
+
+
+.popular-tutorials {
+  background-color: #ffffff;
+  padding: 100px 80px;
+  text-align: left;
+  color: #071629;
+  position: 629 x 115px;
+}
+
+.popular-tutorials h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+/* 📦 Tutorial kartları */
+.tutorial-list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.tutorial-card {
+  background-color: transparent;
+  width: 260px;
+  text-align: left;
+}
+
+.tutorial-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.tutorial-card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #FFFFFF;
+}
+
+.tutorial-card p {
+  font-size: 14px;
+  color: #D3D3D3;
+  margin-bottom: 16px;
+}
+
+/* 👤 Tutor info */
+.tutor-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tutor-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.tutor-info h3 {
+  font-size: 14px;
+  color: #C271FF;
+}
+
+/* ⭐ Rating və zaman */
+.rating-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-time img {
+  width: 16px;
+  height: 16px;
+}
+
+.rating-time p {
+  font-size: 12px;
+  color: #FFFFFF;
+  margin-left: auto;
+}
+/* 📦 Free membership 3 */
+
+.free-membership {
+  background-color: #071629;
+  padding: 100px 80px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.free-membership h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap; /* responsivlik üçün */
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  width: 220px;
+  text-align: center;
+}
+
+.feature-item img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.feature-item h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #FFFFFF;
+}
+
+.feature-item p {
+  font-size: 14px;
+  color: #D3D3D3;
+}
+
+.free-membership button {
+  padding: 16px 36px;
+  background-color: #C271FF;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.free-membership button:hover {
+  background-color: #a85ce2;
+}
+
+
+/*fag*/
+.faq {
+  background-color: #ffffff;
+  padding: 100px 80px;
+  text-align: center;
+  color: #071629;
+}
+
+.faq h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+/* 🔸 Sətir düzülüşü */
+.faq-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+/* 🔹 Hər bir sual bloku */
+.faq-item {
+  width: 400px;
+  text-align: left;
+}
+
+.faq-item h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #071629;
+}
+
+.faq-item p {
+  font-size: 14px;
+  color: #071629;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #071629;
+  padding: 40px 80px;
+  color: #FFFFFF;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-container img {
+  height: 40px;
+}
+
+.social-links {
+  display: flex;
+  gap: 24px;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #D3D3D3;
+}
